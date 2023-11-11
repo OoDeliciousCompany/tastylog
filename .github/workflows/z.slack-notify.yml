@@ -28,8 +28,9 @@ jobs:
                     {
                       "type": "section",
                       "text": {
-                        "type": "mrkdwn",
-                        "text": "Hello World"
+                        "type": "plain_text",
+                        "text": "Hello World :ghost:",
+                        "emoji": true
                       }
                     }
                   ]
