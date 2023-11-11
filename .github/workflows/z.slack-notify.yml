@@ -1,0 +1,48 @@
+name: "z Slack Notify"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  notify:
+    name: Slack Notify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Slack notify
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          channel-id: "C0654LK7LRL"
+          payload: |
+
+            {
+              "attachments": [
+                {
+                  "color": "#f2c744",
+                  "blocks": [
+                    {
+                      "type": "header",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "Message Header",
+                        "emoji": true
+                      }
+                    },
+                    {
+                      "type": "context",
+                      "elements": [
+                        {
+                          "type": "image",
+                          "image_url": "https://pbs.twimg.com/profile_images/625633822235693056/lNGUneLX_400x400.jpg",
+                          "alt_text": "cute cat"
+                        },
+                        {
+                          "type": "mrkdwn",
+                          "text": "Hello World"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+        env: SLACK_BOT_TOKEN:${{ secrets.SLACK_BOT_TOKEN }}
