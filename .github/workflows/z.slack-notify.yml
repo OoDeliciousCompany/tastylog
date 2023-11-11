@@ -13,11 +13,9 @@ jobs:
         with:
           channel-id: "C0654LK7LRL"
           payload: |
-
             {
               "attachments": [
                 {
-                  "color": "#f2c744",
                   "blocks": [
                     {
                       "type": "header",
@@ -28,18 +26,12 @@ jobs:
                       }
                     },
                     {
-                      "type": "context",
-                      "elements": [
-                        {
-                          "type": "image",
-                          "image_url": "https://pbs.twimg.com/profile_images/625633822235693056/lNGUneLX_400x400.jpg",
-                          "alt_text": "cute cat"
-                        },
-                        {
-                          "type": "mrkdwn",
-                          "text": "Hello World"
-                        }
-                      ]
+                      "type": "section",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "Hello World :ghost:",
+                        "emoji": true
+                      }
                     }
                   ]
                 }
