@@ -30,7 +30,6 @@ jobs:
                       "text": {
                         "type": "plain_text",
                         "text": "Hello World :ghost:",
-                        "emoji": true
                       }
                     }
                   ]
