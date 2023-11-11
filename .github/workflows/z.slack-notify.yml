@@ -21,15 +21,14 @@ jobs:
                       "type": "header",
                       "text": {
                         "type": "plain_text",
-                        "text": "Message Header",
-                        "emoji": true
+                        "text": "Message Header"
                       }
                     },
                     {
                       "type": "section",
                       "text": {
                         "type": "plain_text",
-                        "text": "Hello World :ghost:"
+                        "text": "Hello World"
                       }
                     }
                   ]
